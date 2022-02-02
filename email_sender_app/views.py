@@ -6,7 +6,7 @@ from django.template import loader
 # Create your views here.
 def index(request):
     html_message = loader.render_to_string(
-        'email_proj/message.html',
+        'email_sender/message.html',
         {
             'name': 'Habari',
             'body':  'Umepokea barua pepe hii ya kifahari!',
