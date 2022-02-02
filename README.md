@@ -8,3 +8,15 @@ Emails have become the medium of professional communication, but have we ever wo
 - HTML
 - Docker
 
+# Steps to run
+- Clone the project
+
+    `$ git clone https://github.com/lwairore/django-email-sender`
+
+- Install Docker using the [this tutorial](https://docs.docker.com/engine/install/)
+- To run the Django app, run the following command from the root of your project directory:
+
+    `$ docker-compose up`
+- To bring down the application run:
+
+    `$ docker-compose down`
