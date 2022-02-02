@@ -12,6 +12,13 @@ ENV SQL_PORT 5432
 ENV DJANGO_SETTINGS_MODULE 'email_sender_project.settings.development'
 ENV DEVELOPMENT_ALLOWED_HOSTS '127.0.0.1, localhost, 0.0.0.0'
 
+# Email configurations
+ENV EMAIL_BACKEND ='django.core.mail.backends.smtp.EmailBackend'
+ENV EMAIL_HOST_USER = '<Enter your GMAIL username here>@gmail.com'   
+ENV EMAIL_HOST ='smtp.gmail.com'
+ENV EMAIL_PORT = 587
+ENV EMAIL_HOST_PASSWORD = '<Enter your password here>'   
+ENV EMAIL_USE_TLS = True
 
 RUN mkdir /django_email_sender_project
 WORKDIR /django_email_sender_project
