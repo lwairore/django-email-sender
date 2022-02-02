@@ -7,7 +7,7 @@ ENV SQL_ENGINE 'django.db.backends.postgresql'
 ENV SQL_DATABASE 'email_sender'
 ENV SQL_USER 'luke'
 ENV SQL_PASSWORD 'email_sender123'
-ENV SQL_HOST 'email_sender_db'
+ENV SQL_HOST 'django_email_sender_db'
 ENV SQL_PORT 5432
 ENV DJANGO_SETTINGS_MODULE 'email_sender_project.settings.development'
 ENV DEVELOPMENT_ALLOWED_HOSTS '127.0.0.1, localhost, 0.0.0.0'
