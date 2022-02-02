@@ -1,0 +1,23 @@
+version: '3.3'
+
+services:
+  # Postgres
+  django_email_sender_db:
+    image: postgres
+
+    environment:
+      - POSTGRES_USER=luke
+      - POSTGRES_PASSWORD=django_email_sender123
+      - POSTGRES_DB=django_email_sender
+
+  django_email_sender_web:
+    build: .
+    command: ["./run_web.sh"]
+    volumes:
+      - .:/django_email_sender_project
+    ports:
+      - "8000:8000"
+    links:
+      - django_email_sender_db
+    depends_on:
+      - django_email_sender_db
