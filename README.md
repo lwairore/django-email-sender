@@ -20,3 +20,8 @@ Emails have become the medium of professional communication, but have we ever wo
 - To bring down the application run:
 
     `$ docker-compose down`
+
+# Additional changes to be done in Host Gmail account
+- Go to [https://myaccount.google.com/security](https://myaccount.google.com/security)
+- Scroll till you find "Less secure app access"
+- Here you will find that the status is Off. You need to turn this to On State. Only if you follow the above steps, then you can send mail from your Gmail account using your django code.
